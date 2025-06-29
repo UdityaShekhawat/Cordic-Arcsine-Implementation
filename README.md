@@ -2,7 +2,7 @@
 
 This project implements a CORDIC (COordinate Rotation DIgital Computer) algorithm in Verilog to compute the arcsine (sin⁻¹) function using an ASMD (Algorithmic State Machine with Data Path) design.
 
-📌 Features
+##📌 Features
 Computes arcsin(x) using the iterative CORDIC method.
 
 Designed using ASMD-style FSM for modular and structured hardware implementation.
@@ -13,14 +13,14 @@ Uses fixed-point arithmetic suitable for FPGA/ASIC integration.
 
 
 
-Algorithm Overview
+## Algorithm Overview
 
 
 CORDIC (in vectoring mode) rotates a vector toward the x-axis, accumulating angle values to compute inverse trigonometric functions.
 
 This implementation uses an ASMD architecture, which cleanly separates the control logic (FSM) from the datapath.
 
-⚙️ FSM States
+##⚙️ FSM States
 
 
 State	Description
@@ -32,7 +32,7 @@ ERROR	Activated if input is out of the valid range [-1,1].
 
 
 
-🧾 Input & Output
+## 🧾 Input & Output
 
 
 Input:
@@ -44,11 +44,24 @@ Fixed-point representation of arcsin(input) in radians.
 
 
 
-ASMD chart
+# ASMD chart
 
 
 
 
 
 ![image](https://github.com/user-attachments/assets/f90cf002-ea01-4221-8317-ab9d8fa0df85)
+
+
+
+
+
+
+
+
+# cordic Algorithn
+
+
+![image](https://github.com/user-attachments/assets/9672c52b-703d-4fed-b6c3-c02d535ca489)
+
 
