@@ -45,5 +45,10 @@ Fixed-point representation of arcsin(input) in radians.
 
 
 ASMD chart
+
+
+
+
+
 ![image](https://github.com/user-attachments/assets/f90cf002-ea01-4221-8317-ab9d8fa0df85)
 
