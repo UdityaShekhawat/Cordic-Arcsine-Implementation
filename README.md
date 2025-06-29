@@ -13,12 +13,16 @@ Uses fixed-point arithmetic suitable for FPGA/ASIC integration.
 
 
 
- Algorithm Overview
+Algorithm Overview
+
+
 CORDIC (in vectoring mode) rotates a vector toward the x-axis, accumulating angle values to compute inverse trigonometric functions.
 
 This implementation uses an ASMD architecture, which cleanly separates the control logic (FSM) from the datapath.
 
 ⚙️ FSM States
+
+
 State	Description
 IDLE	Waits for the start signal to begin computation.
 INIT	Initializes all internal variables and sets up the input vector.
@@ -29,6 +33,8 @@ ERROR	Activated if input is out of the valid range [-1,1].
 
 
 🧾 Input & Output
+
+
 Input:
 Fixed-point representation of a value in the range [-1,1].
 Output:
